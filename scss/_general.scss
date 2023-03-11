@@ -9,21 +9,21 @@
 :root {
   --white-color: #fff;
   --black-color: #000;
-  --background: #F1F1F1;
+  --background: #f1f1f1;
   --placeholder-color: #272727;
 }
 
 .dark {
   --white-color: #000;
   --black-color: #fff;
-  --background: #1E1E1E;
+  --background: #1e1e1e;
   --placeholder-color: #aaa;
 }
 
 body {
-  font-family: sans-serif;
-  background-color: var(--background);
-  min-height: 100vh;
   display: flex;
+  min-height: 100vh;
   flex-flow: wrap column;
+  background-color: var(--background);
+  font-family: "Nunito Sans", sans-serif;
 }
