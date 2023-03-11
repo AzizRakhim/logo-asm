@@ -6,13 +6,23 @@
   box-sizing: border-box;
 }
 
-:root {}
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --background: #F1F1F1;
+  --placeholder-color: #272727;
+}
 
-.dark {}
+.dark {
+  --white-color: #000;
+  --black-color: #fff;
+  --background: #1E1E1E;
+  --placeholder-color: #aaa;
+}
 
 body {
   font-family: sans-serif;
-  background-color: #fff;
+  background-color: var(--background);
   min-height: 100vh;
   display: flex;
   flex-flow: wrap column;

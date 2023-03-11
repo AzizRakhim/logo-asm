@@ -1,5 +1,12 @@
-.container{
-  width: 1200px;
-  padding: 0 15px;
+.container {
+  width: 100%;
+  max-width: 1410px;
+  padding: 0 25px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 20px;
+  }
 }
