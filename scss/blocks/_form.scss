@@ -2,8 +2,9 @@
   width: 100%;
   position: relative;
   padding-bottom: 120px;
-  &__main {
-  }
+
+  &__main {}
+
   &__inner {
     display: flex;
     padding: 60px 80px;
@@ -12,12 +13,14 @@
     backdrop-filter: blur(1px);
     border: 1px solid #4e4e4e;
     justify-content: space-between;
-    background: rgba(14, 16, 20, 0.9);
+    background: var(--form-bg);
   }
+
   &__left {
     width: 100%;
     max-width: 650px;
   }
+
   &__title {
     width: 100%;
     font-size: 32px;
@@ -26,16 +29,18 @@
     line-height: 39px;
     font-style: italic;
     margin-bottom: 40px;
-    color: var(--white-color);
+    color: var(--black-color);
     font-family: "Proxima Nova";
   }
+
   &__form {
     width: 100%;
   }
+
   &__input {
     width: 100%;
     outline: none;
-    color: #aaaa;
+    color: var(--placeholder-color);
     font-size: 17px;
     max-width: 500px;
     font-weight: 400;
@@ -47,37 +52,43 @@
     background-color: transparent;
     border-bottom: 1px solid #aaa;
   }
+
   &__input-last {
     margin-bottom: 40px;
   }
+
   &__text {
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
     margin-bottom: 34px;
-    color: var(--white-color);
+    color: var(--black-color);
     font-family: "Proxima Nova";
   }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
+
   &__item {
     width: 50%;
     display: flex;
     align-items: center;
     margin-bottom: 30px !important;
     @include list-style;
+
     p {
       font-size: 18px;
       font-weight: 600;
       line-height: 22px;
-      color: var(--white-color);
+      color: var(--black-color);
       font-family: "Proxima Nova";
     }
   }
+
   &__input-checkbox {
     width: 20px;
     height: 20px;
@@ -86,6 +97,7 @@
     border: 1px solid #aaaaaa;
     background: #4e4e4e !important;
   }
+
   &__right {
     width: 100%;
     padding: 40px 60px;
@@ -96,42 +108,48 @@
     background: rgba(83, 83, 83, 0.1);
     box-shadow: 20px 20px 40px rgba(241, 216, 253, 0.08);
   }
+
   &__right-title {
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
     text-align: center;
     margin-bottom: 40px;
-    color: var(--white-color);
+    color: var(--black-color);
     font-family: "Proxima Nova";
   }
+
   &__right-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
+
   &__right-item {
     display: flex;
     align-items: center;
     margin-bottom: 60px;
     flex-direction: column;
   }
+
   &__right-img {
     width: 150px;
     height: 150px;
     margin-bottom: 10px;
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
+
   &__right-name {
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
-    color: var(--white-color);
+    color: var(--black-color);
     font-family: "Proxima Nova";
   }
 
@@ -139,38 +157,48 @@
     &__title {
       font-size: 24px;
     }
+
     &__input {
       max-width: 400px;
     }
+
     &__text {
       font-size: 20px;
     }
   }
+
   @media screen and (max-width: 1090px) {
     &__title {
       font-size: 34px;
     }
+
     &__input {
       max-width: 500px;
     }
+
     &__text {
       font-size: 24px;
     }
+
     &__inner {
       flex-direction: column;
     }
+
     &__left {
       max-width: 100%;
     }
+
     &__right {
       max-width: 100%;
     }
   }
+
   @media screen and (max-width: 938px) {
     &__right-item {
       width: 50%;
     }
   }
+
   @media screen and (max-width: 684px) {
     &__title {
       font-size: 24px;
@@ -181,6 +209,7 @@
     &__text {
       font-size: 20px;
     }
+
     &__list {
       flex-direction: column;
       align-items: flex-start;

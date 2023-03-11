@@ -1,10 +1,7 @@
 #hero {
   min-height: 100vh;
-  background: url('../../assets/images/hero-bg.svg'), var(--hero-bg), rgba(255, 255, 255, 0.5);
-  background-position: center center, center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .hero {
