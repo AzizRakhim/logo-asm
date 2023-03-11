@@ -23,12 +23,123 @@
 
   <section id="hero" class="hero">
     <!-- HEADER START -->
+    
+     <header class="header">
+      <div class="container">
+        <!-- DESKTOP HEADER -->
 
-    <object data="./layouts/header.html" type="text/html"></object>
+        <div class="header__wrapper">
+          <div class="header__logo-box">
+            <a href="#" class="header__link">Logo</a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__item-link">О компании </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item-link">Портфолио </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item-link">Услуги </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__functions-wrapper">
+            <div class="header__theme-wrapper">
+              <button
+                type="button"
+                class="header__theme-btn theme-active"
+                id="sun"
+              >
+                <div>
+                  <img
+                    src="../assets/images/sun.svg"
+                    alt="sun"
+                    width="30"
+                    height="30"
+                  />
+                </div>
+              </button>
+              <button type="button" class="header__theme-btn" id="moon">
+                <div></div>
+              </button>
+            </div>
+            <div class="header__contact-box">
+              <span class="header__tel">+998 90 777-77-77 </span>
+              <a href="mailto:chotatam@gmail.com" class="header__email"
+                >chotatam@gmail.com</a
+              >
+            </div>
+            <a href="tel:+998907777777" class="header__order-btn"
+              >Заказать звонок</a
+            >
+          </div>
+        </div>
 
+        <!-- MOBILE HEADER -->
+
+        <div class="header__mobile-wrapper">
+          <button class="header__burger-btn" type="button" id="burger-btn">
+            <img
+              src="./assets/images/burger-btn.svg"
+              alt="burger button"
+              width="29"
+              height="19"
+            />
+          </button>
+
+          <div class="header__logo-holder">
+            <a href="#" class="header__mobile-logo-link">
+              <img
+                src="./assets/images/mobile-logo.svg"
+                alt="logo"
+                width="89"
+                height="39"
+              />
+            </a>
+          </div>
+
+          <button class="header__mobile-theme-btn" id="mobile-btn" />
+        </div>
+      </div>
+    </header>
+  
     <!-- HEADER END -->
 
-    <div class="hero__container">Hero Content</div>
+    <div class="container">
+      <div class="hero__container">
+        <div class="hero__left">
+          <h2 class="hero__title">
+            Biz veb-saytlar, ilovalarni ishlab chiqamiz
+          </h2>
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+          <div class="hero__btn-wrapper">
+            <button>
+              Портфолио
+              <span>
+                <p>Пор</p>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="hero__right">
+          <canvas
+            id="cobe"
+            style="width: 500px; height: 500px"
+            width="1000"
+            height="1000"
+          ></canvas>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- HERO END -->
@@ -312,8 +423,43 @@
   <!-- MAIN END -->
   <!-- FOOTER END -->
 
-  <footer class="footer">Footer</footer>
+  <footer class="footer">Footer</footer> 
 
+  <!-- MODAL -->
+
+  <div class="header__modal">
+    <div class="header__modal-title">
+      <div>
+        <img
+          src="./assets/images/mobile-logo.svg"
+          alt="logo"
+          width="89"
+          height="39"
+          class="logo-img"
+        />
+      </div>
+      <button type="button" class="header__x-btn" id="x">
+        <img src="./assets/images/x.svg" alt="x btn" width="24" height="24" />
+      </button>
+    </div>
+    <div class="header__list-wrapper">
+      <ul class="header__modal-list">
+        <li class="header__modal-item">
+          <a href="#" class="header__modal-link"> Biz haqimizda </a>
+        </li>
+        <li class="header__modal-item">
+          <a href="#" class="header__modal-link"> Portfolio </a>
+        </li>
+        <li class="header__modal-item">
+          <a href="#" class="header__modal-link"> Xizmatlarimiz </a>
+        </li>
+        <li class="header__modal-item">
+          <a href="#" class="header__modal-link"> Buyurtma berish </a>
+        </li>
+      </ul>
+      <a href="tel:+998999999999" class="header__modal-tel"> (99) 999 9999 </a>
+    </div>
+  </div>
   <body>
     <!-- SLICK JS -->
 
@@ -326,6 +472,40 @@
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <!-- GLOBE JS -->
+
+    <script type="module">
+      import createGlobe from "https://cdn.skypack.dev/cobe";
+
+      let phi = 0;
+      let canvas = document.getElementById("cobe");
+
+      const globe = createGlobe(canvas, {
+        devicePixelRatio: 2,
+        width: 1000,
+        height: 1000,
+        phi: 0,
+        theta: 0,
+        dark: 0,
+        diffuse: 1.2,
+        scale: 1,
+        mapSamples: 16000,
+        mapBrightness: 6,
+        baseColor: [1, 1, 1],
+        markerColor: [1, 0.5, 1],
+        glowColor: [1, 1, 1],
+        offset: [0, 0],
+        markers: [
+          { location: [37.7595, -122.4367], size: 0.03 },
+          { location: [40.7128, -74.006], size: 0.1 },
+        ],
+        onRender: (state) => {
+          state.phi = phi;
+          phi += 0.01;
+        },
+      });
+    </script>
 
     <!-- MY JS -->
 

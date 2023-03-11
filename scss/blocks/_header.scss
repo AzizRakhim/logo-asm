@@ -1,0 +1,280 @@
+.header {
+  width: 100%;
+  height: 80px;
+  background: var(--header-bg);
+  backdrop-filter: blur(1px);
+  padding: 15px 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+    color: var(--black-color);
+    @include text-none;
+  }
+
+  &__list {
+    @include list-style;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+
+  &__item-link {
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--black-color);
+    @include text-none;
+  }
+
+  &__functions-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__theme-wrapper {
+    background: var(--white-color);
+    border-radius: $border-radius-40;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    border: var(--border);
+  }
+
+  &__theme-btn {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius-round;
+    padding: 3px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+
+    div {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    &:first-child {
+      margin-right: 14px;
+    }
+
+    &:nth-child(2) {
+      div {
+        background: var(--moon-img);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  &__contact-box {
+    display: flex;
+    flex-direction: column;
+    margin-right: 31px;
+  }
+
+  &__tel {
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 3px;
+    color: var(--black-color);
+  }
+
+  &__email {
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--black-color);
+    @include text-none;
+  }
+
+  &__order-btn {
+    @include header-btn;
+    @include text-none;
+  }
+
+  &__mobile-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__burger-btn {
+    border: none;
+    background-color: transparent;
+
+    img {
+      transition: all 0.3s ease;
+      filter: var(--svg-filter)
+    }
+  }
+
+  &__mobile-theme-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: $border-radius-round;
+    background-color: #5454D4;
+    border: none;
+    background-image: var(--theme-img);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 3px;
+    transition: all 0.3s ease;
+  }
+
+  &__mobile-logo-link {
+    img {
+      filter: var(--svg-filter);
+    }
+  }
+
+  &__modal {
+    min-width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -110%;
+    z-index: 10;
+    background-color: rgb(0, 0, 0, 0.9);
+    transition: all 0.3s ease;
+  }
+
+  &__modal-title {
+    background: rgba(23, 25, 29, 0.9);
+    backdrop-filter: blur(4px);
+    height: 79px;
+    padding: 18px 20px 17px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo-img {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    }
+  }
+
+  &__x-btn {
+    border: none;
+    background-color: transparent;
+  }
+
+  &__list-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: calc(100vh - 79px);
+  }
+
+  &__modal-list {
+    @include list-style;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  &__modal-item {
+    margin-bottom: 30px;
+  }
+
+  &__modal-link {
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: $white;
+    @include text-none;
+  }
+
+  &__modal-tel {
+    background: $icon-color;
+    border-radius: 141px;
+    padding: 21px 44px;
+    margin: 0 50px 96px 51px;
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: $white;
+    text-align: center;
+    @include text-none;
+  }
+}
+
+.move-right {
+  left: 0;
+}
+
+.theme-active {
+  background-color: #5454D4;
+}
+
+@media screen and (max-width: 1100px) {
+  .header {
+    &__contact-box {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .header {
+    &__order-btn {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 74px;
+    padding: 18px 0 17px 0;
+
+    &__wrapper {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .header {
+    &__modal-tel {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    &__mobile-wrapper {
+      display: none;
+    }
+  }
+}
