@@ -6,10 +6,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -44,13 +42,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -58,10 +52,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -78,13 +70,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -102,10 +91,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -155,14 +142,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -170,8 +153,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -180,8 +162,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -189,9 +170,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -199,9 +180,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -210,9 +191,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -230,19 +211,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -263,20 +237,17 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -284,17 +255,15 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -303,10 +272,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -346,8 +313,7 @@ template {
 *::after {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -355,6 +321,12 @@ template {
   --black-color: #000;
   --background: #f1f1f1;
   --placeholder-color: #272727;
+  --hero-bg: url("../assets/images/light-hero-bg.svg");
+  --theme-img: url("../assets/images/sun.svg");
+  --border: 1px solid transparent;
+  --moon-img: url("../assets/images/moon.svg");
+  --svg-filter: "#000";
+  --header-bg: rgba(23, 25, 29, 0.1);
 }
 
 .dark {
@@ -362,19 +334,21 @@ template {
   --black-color: #fff;
   --background: #1e1e1e;
   --placeholder-color: #aaa;
+  --hero-bg: url("../assets/images/dark-hero-bg.svg");
+  --theme-img: url("../assets/images/light-moon.svg");
+  --border: 1px solid #aaa;
+  --moon-img: url("../assets/images/light-moon.svg");
+  --svg-filter: invert(100%);
+  --header-bg: rgba(23, 25, 29, 0.9);
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: wrap column;
-          flex-flow: wrap column;
+  flex-flow: wrap column;
   background-color: var(--background);
   font-family: "Nunito Sans", sans-serif;
+  transition: all 0.3s ease;
 }
 
 .container {
@@ -389,161 +363,478 @@ body {
     padding: 0 20px;
   }
 }
+#hero {
+  min-height: 100vh;
+  background: url("../../assets/images/hero-bg.svg"), var(--hero-bg), rgba(255, 255, 255, 0.5);
+  background-position: center center, center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
+.hero__container {
+  padding: 120px 0 138px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.hero__left {
+  width: 60%;
+}
+.hero__right {
+  width: 40%;
+}
+.hero__title {
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  color: var(--black-color);
+  margin-bottom: 40px;
+  max-width: 549px;
+}
+.hero__text {
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--black-color);
+  max-width: 549px;
+}
+.hero__btn-wrapper {
+  width: 100%;
+  height: 70px;
+  position: relative;
+  margin-top: 180px;
+}
+.hero__btn-wrapper button {
+  top: 50%;
+  left: 0;
+  padding: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #6911ad;
+  line-height: 22px;
+  position: absolute;
+  transition: all 0.5s ease;
+  font-family: "Proxima Nova";
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.hero__btn-wrapper button span {
+  top: -10px;
+  left: -10px;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  position: absolute;
+  border-radius: 141px;
+  background: #6911ad;
+  transition: all 0.5s ease;
+}
+.hero__btn-wrapper button span p {
+  top: 49%;
+  right: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  position: absolute;
+  transition-delay: 0.3s;
+  font-family: "Proxima Nova";
+}
+.hero__btn-wrapper button:hover {
+  color: #fff;
+}
+.hero__btn-wrapper button:hover span {
+  top: 0;
+  z-index: -1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero__btn-wrapper button:hover span p {
+  opacity: 0;
+  transition: all 0s ease;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background: var(--header-bg);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  padding: 15px 0;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__link {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 50px;
+  color: var(--black-color);
+  text-decoration: none;
+}
+.header__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.header__item:not(:last-child) {
+  margin-right: 16px;
+}
+.header__item-link {
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--black-color);
+  text-decoration: none;
+}
+.header__functions-wrapper {
+  display: flex;
+  align-items: center;
+}
+.header__theme-wrapper {
+  background: var(--white-color);
+  border-radius: 40px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  border: var(--border);
+}
+.header__theme-btn {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 3px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+.header__theme-btn div {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__theme-btn:first-child {
+  margin-right: 14px;
+}
+.header__theme-btn:nth-child(2) div {
+  background: var(--moon-img);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__contact-box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 31px;
+}
+.header__tel {
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 3px;
+  color: var(--black-color);
+}
+.header__email {
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--black-color);
+  text-decoration: none;
+}
+.header__order-btn {
+  background: #6911AD;
+  border-radius: 7px;
+  padding: 12px 21px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+.header__mobile-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__burger-btn {
+  border: none;
+  background-color: transparent;
+}
+.header__burger-btn img {
+  transition: all 0.3s ease;
+  filter: var(--svg-filter);
+}
+.header__mobile-theme-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #5454D4;
+  border: none;
+  background-image: var(--theme-img);
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 3px;
+  transition: all 0.3s ease;
+}
+.header__mobile-logo-link img {
+  filter: var(--svg-filter);
+}
+.header__modal {
+  min-width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -110%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: all 0.3s ease;
+}
+.header__modal-title {
+  background: rgba(23, 25, 29, 0.9);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  height: 79px;
+  padding: 18px 20px 17px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__modal-title .logo-img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+.header__x-btn {
+  border: none;
+  background-color: transparent;
+}
+.header__list-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: calc(100vh - 79px);
+}
+.header__modal-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.header__modal-item {
+  margin-bottom: 30px;
+}
+.header__modal-link {
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #fff;
+  text-decoration: none;
+}
+.header__modal-tel {
+  background: #6911AD;
+  border-radius: 141px;
+  padding: 21px 44px;
+  margin: 0 50px 96px 51px;
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.move-right {
+  left: 0;
+}
+
+.theme-active {
+  background-color: #5454D4;
+}
+
+@media screen and (max-width: 1100px) {
+  .header__contact-box {
+    display: none;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .header__order-btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    height: 74px;
+    padding: 18px 0 17px 0;
+  }
+  .header__wrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 405px) {
+  .header__modal-tel {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__mobile-wrapper {
+    display: none;
+  }
+}
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPT-BookObl.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPT-BookObl.woff") format("woff");
   font-weight: normal;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPTCond-Book.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPTCond-Book.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPT-Bold.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPT-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPT-Book.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPT-Book.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPTCond-BookObl.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPTCond-BookObl.woff") format("woff");
   font-weight: normal;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPTCond-BoldObl.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPTCond-BoldObl.woff") format("woff");
   font-weight: bold;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPTCond-ExtraBold.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPTCond-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPTCond-Bold.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPTCond-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPT-BoldObl.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPT-BoldObl.woff") format("woff");
   font-weight: bold;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPTCond-Medium.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPTCond-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPTCond-MediumObl.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPTCond-MediumObl.woff") format("woff");
   font-weight: 500;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPT-Demi.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPT-Demi.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPT-ExtraBoldObl.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPT-ExtraBoldObl.woff") format("woff");
   font-weight: bold;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPT-DemiObl.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPT-DemiObl.woff") format("woff");
   font-weight: 600;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPT-ExtraBold.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPT-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("FuturaPTCond-ExtraBoldObl.woff2") format("woff2"), url("FuturaPTCond-ExtraBoldObl.woff") format("woff");
   font-weight: bold;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPT-Medium.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPT-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPT-LightObl.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPT-LightObl.woff") format("woff");
   font-weight: 300;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPT-HeavyObl.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPT-HeavyObl.woff") format("woff");
   font-weight: 900;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPT-Light.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPT-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPT-Heavy.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPT-Heavy.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Futura PT";
   src: url("../../assets/fonts/FuturaPT/FuturaPT-MediumObl.woff2") format("woff2"), url("../../assets/fonts/FuturaPT/FuturaPT-MediumObl.woff") format("woff");
   font-weight: 500;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-Heavy.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-Heavy.woff") format("woff");
@@ -551,7 +842,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-HeavyItalic.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-HeavyItalic.woff") format("woff");
@@ -559,7 +849,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-Black.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-Black.woff") format("woff");
@@ -567,7 +856,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-MediumItalic.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-MediumItalic.woff") format("woff");
@@ -575,7 +863,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-BoldItalic.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-BoldItalic.woff") format("woff");
@@ -583,7 +870,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-Bold.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-Bold.woff") format("woff");
@@ -591,7 +877,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-Medium.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-Medium.woff") format("woff");
@@ -599,7 +884,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-LightItalic.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-LightItalic.woff") format("woff");
@@ -607,7 +891,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-BlackItalic.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-BlackItalic.woff") format("woff");
@@ -615,7 +898,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-ExtraBoldItalic.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-ExtraBoldItalic.woff") format("woff");
@@ -623,7 +905,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-SemiBold.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-SemiBold.woff") format("woff");
@@ -631,7 +912,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-Regular.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-Regular.woff") format("woff");
@@ -639,7 +919,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-RegularItalic.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-RegularItalic.woff") format("woff");
@@ -647,7 +926,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-UltraLight.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-UltraLight.woff") format("woff");
@@ -655,7 +933,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-ThinItalic.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-ThinItalic.woff") format("woff");
@@ -663,7 +940,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-UltraLightItalic.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-UltraLightItalic.woff") format("woff");
@@ -671,7 +947,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-Thin.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-Thin.woff") format("woff");
@@ -679,7 +954,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("../../assets/fonts/Gilroy/Gilroy-SemiBoldItalic.woff2") format("woff2"), url("../../assets/fonts/Gilroy/Gilroy-SemiBoldItalic.woff") format("woff");
@@ -687,7 +961,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Inter";
   src: url("../../assets/fonts/Inter/Inter-Medium.woff2") format("woff2"), url("../../assets/fonts/Inter/Inter-Medium.woff") format("woff");
@@ -695,7 +968,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Inter";
   src: url("../../assets/fonts/Inter/Inter-Bold.woff2") format("woff2"), url("../../assets/fonts/Inter/Inter-Bold.woff") format("woff");
@@ -703,7 +975,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Inter";
   src: url("../../assets/fonts/Inter/Inter-Light.woff2") format("woff2"), url("../../assets/fonts/Inter/Inter-Light.woff") format("woff");
@@ -711,7 +982,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Inter";
   src: url("../../assets/fonts/Inter/Inter-ExtraBold.woff2") format("woff2"), url("../../assets/fonts/Inter/Inter-ExtraBold.woff") format("woff");
@@ -719,7 +989,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Inter";
   src: url("../../assets/fonts/Inter/Inter-ExtraLight.woff2") format("woff2"), url("../../assets/fonts/Inter/Inter-ExtraLight.woff") format("woff");
@@ -727,7 +996,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Inter";
   src: url("../../assets/fonts/Inter/Inter-Black.woff2") format("woff2"), url("../../assets/fonts/Inter/Inter-Black.woff") format("woff");
@@ -735,7 +1003,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Inter";
   src: url("../../assets/fonts/Inter/Inter-SemiBold.woff2") format("woff2"), url("../../assets/fonts/Inter/Inter-SemiBold.woff") format("woff");
@@ -743,7 +1010,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Inter";
   src: url("../../assets/fonts/Inter/Inter-Regular.woff2") format("woff2"), url("../../assets/fonts/Inter/Inter-Regular.woff") format("woff");
@@ -751,7 +1017,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Inter";
   src: url("../../assets/fonts/Inter/Inter-Thin.woff2") format("woff2"), url("../../assets/fonts/Inter/Inter-Thin.woff") format("woff");
@@ -759,7 +1024,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Nunito Sans";
   src: url("../../assets/fonts/NunitoSans/NunitoSans-Bold.woff2") format("woff2"), url("../../assets/fonts/NunitoSans/NunitoSans-Bold.woff") format("woff");
@@ -767,7 +1031,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Nunito Sans";
   src: url("../../assets/fonts/NunitoSans/NunitoSans-ExtraLight.woff2") format("woff2"), url("../../assets/fonts/NunitoSans/NunitoSans-ExtraLight.woff") format("woff");
@@ -775,7 +1038,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Nunito Sans";
   src: url("NunitoSans-BoldItalic.woff2") format("woff2"), url("NunitoSans-BoldItalic.woff") format("woff");
@@ -783,7 +1045,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Nunito Sans";
   src: url("../../assets/fonts/NunitoSans/NunitoSans-ExtraLightItalic.woff2") format("woff2"), url("../../assets/fonts/NunitoSans/NunitoSans-ExtraLightItalic.woff") format("woff");
@@ -791,7 +1052,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Nunito Sans";
   src: url("../../assets/fonts/NunitoSans/NunitoSans-ExtraBoldItalic.woff2") format("woff2"), url("../../assets/fonts/NunitoSans/NunitoSans-ExtraBoldItalic.woff") format("woff");
@@ -799,7 +1059,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Nunito Sans";
   src: url("../../assets/fonts/NunitoSans/NunitoSans-Italic.woff2") format("woff2"), url("../../assets/fonts/NunitoSans/NunitoSans-Italic.woff") format("woff");
@@ -807,7 +1066,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Nunito Sans";
   src: url("NunitoSans-Black.woff2") format("woff2"), url("NunitoSans-Black.woff") format("woff");
@@ -815,7 +1073,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Nunito Sans";
   src: url("../../assets/fonts/NunitoSans/NunitoSans-BlackItalic.woff2") format("woff2"), url("../../assets/fonts/NunitoSans/NunitoSans-BlackItalic.woff") format("woff");
@@ -823,7 +1080,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Nunito Sans";
   src: url("NunitoSans-ExtraBold.woff2") format("woff2"), url("NunitoSans-ExtraBold.woff") format("woff");
@@ -831,7 +1087,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Nunito Sans";
   src: url("../../assets/fonts/NunitoSans/NunitoSans-SemiBoldItalic.woff2") format("woff2"), url("../../assets/fonts/NunitoSans/NunitoSans-SemiBoldItalic.woff") format("woff");
@@ -839,7 +1094,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Nunito Sans";
   src: url("../../assets/fonts/NunitoSans/NunitoSans-Light.woff2") format("woff2"), url("../../assets/fonts/NunitoSans/NunitoSans-Light.woff") format("woff");
@@ -847,7 +1101,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Nunito Sans";
   src: url("../../assets/fonts/NunitoSans/NunitoSans-LightItalic.woff2") format("woff2"), url("../../assets/fonts/NunitoSans/NunitoSans-LightItalic.woff") format("woff");
@@ -855,7 +1108,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Nunito Sans";
   src: url("../../assets/fonts/NunitoSans/NunitoSans-Regular.woff2") format("woff2"), url("../../assets/fonts/NunitoSans/NunitoSans-Regular.woff") format("woff");
@@ -863,7 +1115,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Nunito Sans";
   src: url("../../assets/fonts/NunitoSans/NunitoSans-SemiBold.woff2") format("woff2"), url("../../assets/fonts/NunitoSans/NunitoSans-SemiBold.woff") format("woff");
@@ -871,7 +1122,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Proxima Nova Bl";
   src: url("../../assets/fonts/ProximaNova/ProximaNova-Black.woff2") format("woff2"), url("../../assets/fonts/ProximaNova/ProximaNova-Black.woff") format("woff");
@@ -879,7 +1129,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Proxima Nova Bl";
   src: url("../../assets/fonts/ProximaNova/ProximaNova-Black.woff2") format("woff2"), url("../../assets/fonts/ProximaNova/ProximaNova-Black.woff") format("woff");
@@ -887,7 +1136,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Proxima Nova Rg";
   src: url("../../assets/fonts/ProximaNova/ProximaNova-Regular.woff2") format("woff2"), url("../../assets/fonts/ProximaNova/ProximaNova-Regular.woff") format("woff");
@@ -895,7 +1143,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Proxima Nova Bl";
   src: url("../../assets/fonts/ProximaNova/ProximaNova-BlackIt.woff2") format("woff2"), url("../../assets/fonts/ProximaNova/ProximaNova-BlackIt.woff") format("woff");
@@ -903,7 +1150,6 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Proxima Nova";
   src: url("../../assets/fonts/ProximaNova/ProximaNova-ExtraBold.woff2") format("woff2"), url("../../assets/fonts/ProximaNova/ProximaNova-ExtraBold.woff") format("woff");
@@ -911,7 +1157,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Proxima Nova Lt";
   src: url("../../assets/fonts/ProximaNova/ProximaNova-Light.woff2") format("woff2"), url("../../assets/fonts/ProximaNova/ProximaNova-Light.woff") format("woff");
@@ -919,7 +1164,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Proxima Nova Rg";
   src: url("../../assets/fonts/ProximaNova/ProximaNova-BoldIt.woff2") format("woff2"), url("../../assets/fonts/ProximaNova/ProximaNova-BoldIt.woff") format("woff");
@@ -927,12 +1171,10 @@ body {
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Proxima Nova Rg";
   src: url("../../assets/fonts/ProximaNova/ProximaNova-Bold.woff2") format("woff2"), url("../../assets/fonts/ProximaNova/ProximaNova-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
