@@ -1,12 +1,12 @@
 *,
 *::before,
-*::after{
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: sans-serif;
   background-color: #fff;
   min-height: 100vh;
