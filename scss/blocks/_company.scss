@@ -1,0 +1,198 @@
+.company {
+  padding-top: 941px;
+  width: 100%;
+  position: relative;
+  padding-bottom: 95px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    margin-right: 20px;
+  }
+  &__title {
+    font-family: "Futura PT";
+    color: var(--white-color);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 64px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  &__text {
+    font-family: "Futura PT";
+    width: 100%;
+    font-size: 18px;
+    max-width: 570px;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--company-text-color);
+    margin-bottom: 36px;
+    transition: all 0.3s ease;
+    &:nth-child(1) {
+      margin-bottom: 36px;
+    }
+  }
+  &__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px !important;
+    transition: all 0.3s ease;
+    @include list-style;
+    div {
+      width: 270px;
+      display: flex;
+      margin-right: 30px;
+      align-items: center;
+      flex-direction: column;
+      transition: all 0.3s ease;
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+    }
+    span {
+      font-family: "Futura PT";
+      display: inline-block;
+      margin-bottom: 12px;
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 100%;
+      background: linear-gradient(
+        109.09deg,
+        rgba(0, 40, 248, 0.89) 0%,
+        #6911ad 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    p {
+      font-family: "Futura PT";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+      color: var(--white-color);
+    }
+  }
+  @media screen and (max-width: 1120px) {
+    &__title {
+      font-size: 42px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+    &__item {
+      div {
+        width: 250px;
+      }
+    }
+  }
+  @media screen and (max-width: 1008px) {
+    &__title {
+      font-size: 38px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 968px) {
+    &__title {
+      font-size: 38px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+    &__item {
+      div {
+        width: 220px;
+      }
+    }
+  }
+  @media screen and (max-width: 912px) {
+    &__title {
+      font-size: 45px;
+      text-align: center;
+    }
+    &__text {
+      font-size: 18px;
+    }
+    &__inner {
+      flex-direction: column;
+    }
+    &__item {
+      div {
+        width: 300px;
+      }
+    }
+  }
+  @media screen and (max-width: 685px) {
+    &__item {
+      div {
+        width: 250px;
+      }
+    }
+  }
+  @media screen and (max-width: 595px) {
+    &__item {
+      div {
+        width: 200px;
+      }
+    }
+  }
+  @media screen and (max-width: 475px) {
+    &__title {
+      font-size: 24px;
+      line-height: 31px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 110%;
+    }
+    &__item {
+      div {
+        width: 170px;
+        margin-right: 20px;
+      }
+      span {
+        font-size: 36px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+  }
+  @media screen and (max-width: 406px) {
+    &__text {
+      font-size: 15px;
+    }
+    &__item {
+      div {
+        width: 150px;
+        margin-right: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 368px) {
+    &__text {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__item {
+      div {
+        width: 130px;
+      }
+      span {
+        font-size: 40px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}

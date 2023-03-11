@@ -1,51 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <title>Document</title>
-  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-  <link rel="stylesheet" href="css/main.min.css" />
-</head>
+  <!-- HERO START -->
 
-<!-- HERO START -->
+  <section id="hero" class="hero">
+    <!-- HEADER START -->
 
-<section id="hero" class="hero">
-  <!-- HEADER START -->
+    <object data="./layouts/header.html" type="text/html"></object>
 
-  <object data="./layouts/header.html" type="text/html"></object>
+    <!-- HEADER END -->
 
-  <!-- HEADER END -->
+    <div class="hero__container">Hero Content</div>
+  </section>
 
-  <div class="hero__container">Hero Content</div>
-</section>
+  <!-- HERO END -->
+  <!-- MAIN START -->
 
-<!-- HERO END -->
-<!-- MAIN START -->
+  <main id="main">
+    <!-- COMPANY SECTION -->
 
-<main id="main">Test content</main>
+    <section class="company">
+      <div class="company__main container">
+        <div class="company__inner">
+          <div class="company__left">
+            <h3 class="company__title">Kompaniya haqida</h3>
+            <p class="company__text">
+              Agentlik-bu mijozlarga o'z bizneslari uchun sifatli va innovatsion
+              echimlarni taqdim etish maqsadida tashkil etilgan veb-agentlik.
+              Bizning jamoamiz mijozlarga moslashtirilgan va sifatli mahsulotni
+              taklif qilish uchun yaqin hamkorlikda ishlaydigan tajribali
+              veb-dizayn, ishlab chiqish va marketing mutaxassislaridan iborat.
+            </p>
+            <p class="company__text">
+              Biz veb-dizayn, veb-sayt va mobil ilovalarni ishlab chiqish, SEO
+              optimallashtirish, kontent yaratish va reklama kampaniyalarini o'z
+              ichiga olgan keng ko'lamli xizmatlarni taklif etamiz. Biz eng
+              yangi texnologiyalar va innovatsion usullardan foydalangan holda
+              brendni rivojlantirish va sotishni ko'paytirish bilan
+              shug'ullanamiz.
+            </p>
+          </div>
+          <div class="company__right">
+            <ul class="company__list">
+              <li class="company__item">
+                <div>
+                  <span>20+ </span>
+                  <p>Проектов запустил</p>
+                </div>
+                <div>
+                  <span>4 года </span>
+                  <p>Опыта разработки</p>
+                </div>
+              </li>
+              <li class="company__item">
+                <div>
+                  <span>12+</span>
+                  <p>Профессионалов</p>
+                </div>
+                <div>
+                  <span>4 года </span>
+                  <p>Опыта разработки</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- MAIN END -->
-<!-- FOOTER END -->
+    <!-- OUR Advantages -->
 
-<footer class="footer">Footer</footer>
+    <section class="advantages">
+      <div class="advantages__main container">
+        <div class="advantages__inner">
+          <h3 class="advantages__title">Bizning afzalliklarimiz</h3>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__item-box">
+                <div class="advantages__img">
+                  <img
+                    src="./assets/images/advantages/advantages1.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="advantages__item-name">Individual yondashuv</p>
+                <span class="advantages__line"></span>
+                <span class="advantages__span"
+                  >Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                  ehtiyojlariga javob beradigan echimlarni yaratamiz</span
+                >
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-box">
+                <div class="advantages__img">
+                  <img
+                    src="./assets/images/advantages/advantages1.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="advantages__item-name">Ekspertiza</p>
+                <span class="advantages__line"></span>
+                <span class="advantages__span"
+                  >Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                  ehtiyojlariga javob beradigan echimlarni yaratamiz</span
+                >
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-box">
+                <div class="advantages__img">
+                  <img
+                    src="./assets/images/advantages/advantages1.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="advantages__item-name">Professional xizmat</p>
+                <span class="advantages__line"></span>
+                <span class="advantages__span"
+                  >Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                  ehtiyojlariga javob beradigan echimlarni yaratamiz</span
+                >
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-box">
+                <div class="advantages__img">
+                  <img
+                    src="./assets/images/advantages/advantages1.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="advantages__item-name">Individual yondashuv</p>
+                <span class="advantages__line"></span>
+                <span class="advantages__span"
+                  >Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                  ehtiyojlariga javob beradigan echimlarni yaratamiz</span
+                >
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-box">
+                <div class="advantages__img">
+                  <img
+                    src="./assets/images/advantages/advantages1.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="advantages__item-name">Ekspertiza</p>
+                <span class="advantages__line"></span>
+                <span class="advantages__span"
+                  >Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                  ehtiyojlariga javob beradigan echimlarni yaratamiz</span
+                >
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-box">
+                <div class="advantages__img">
+                  <img
+                    src="./assets/images/advantages/advantages1.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="advantages__item-name">Professional xizmat</p>
+                <span class="advantages__line"></span>
+                <span class="advantages__span"
+                  >Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                  ehtiyojlariga javob beradigan echimlarni yaratamiz</span
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<body>
-  <!-- SLICK JS -->
+    <!-- FORM SECTION -->
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
+    <section class="form">
+      <div class="form__main container">
+        <div class="form__inner">
+          <div class="form__left">
+            <h3 class="form__title">
+              Sizni bir finjon qahva ustida loyihangizni batafsil muhokama
+              qilishga mamnuniyat ila taklif qilamiz.
+            </h3>
+            <form action="https://echo.htmlacademy.ru/">
+              <input class="form__input" type="text" placeholder="Ismingiz" />
+              <input
+                class="form__input"
+                type="text"
+                placeholder="Telefon raqamingiz"
+              />
+              <input
+                class="form__input form__input-last"
+                type="text"
+                placeholder="G'oyangiz xaqida qisqacha (Muhim emas)"
+              />
+              <p class="form__text">
+                Qanday xizmatlardan foydalanishni xoxlaysiz?
+              </p>
+              <ul class="form__list">
+                <li class="form__item">
+                  <input class="form__input-checkbox" type="checkbox" />
+                  <p>Backend</p>
+                </li>
+                <li class="form__item">
+                  <input class="form__input-checkbox" type="checkbox" />
+                  <p>Frontend</p>
+                </li>
+                <li class="form__item">
+                  <input class="form__input-checkbox" type="checkbox" />
+                  <p>CRM ishlab chiqish</p>
+                </li>
+                <li class="form__item">
+                  <input class="form__input-checkbox" type="checkbox" />
+                  <p>Grafik dizayn</p>
+                </li>
+                <li class="form__item">
+                  <input class="form__input-checkbox" type="checkbox" />
+                  <p>Internet magazin ishlab chiqish</p>
+                </li>
+                <li class="form__item">
+                  <input class="form__input-checkbox" type="checkbox" />
+                  <p>Motion dizayn</p>
+                </li>
+                <li class="form__item">
+                  <input class="form__input-checkbox" type="checkbox" />
+                  <p>Logotip va Brandbook</p>
+                </li>
+                <li class="form__item">
+                  <input class="form__input-checkbox" type="checkbox" />
+                  <p>Mobil ilova ishlab chiqish</p>
+                </li>
+                <li class="form__item">
+                  <input class="form__input-checkbox" type="checkbox" />
+                  <p>Portal ishlab chiqish</p>
+                </li>
+                <li class="form__item">
+                  <input class="form__input-checkbox" type="checkbox" />
+                  <p>Veb sayt ishlab chiqish</p>
+                </li>
+                <li class="form__item">
+                  <input class="form__input-checkbox" type="checkbox" />
+                  <p>Veb dizayn</p>
+                </li>
+                <li class="form__item">
+                  <input class="form__input-checkbox" type="checkbox" />
+                  <p>SMM dizayn</p>
+                </li>
+                <li class="form__item">
+                  <input class="form__input-checkbox" type="checkbox" />
+                  <p>Mobilograf</p>
+                </li>
+              </ul>
+            </form>
+          </div>
+          <div class="form__right">
+            <p class="form__right-title">NIMANI MA'QUL KO'RASIZ?</p>
+            <ul class="form__right-list">
+              <li class="form__right-item">
+                <div class="form__right-img">
+                  <img src="./assets/images/form/coffee.png" alt="coffee" />
+                </div>
+                <p class="form__right-name">Achchiq kofe</p>
+              </li>
+              <li class="form__right-item">
+                <div class="form__right-img">
+                  <img src="./assets/images/form/coffee2.png" alt="coffee" />
+                </div>
+                <p class="form__right-name">Sutli kofe</p>
+              </li>
+              <li class="form__right-item">
+                <div class="form__right-img">
+                  <img src="./assets/images/form/water.png" alt="coffee" />
+                </div>
+                <p class="form__right-name">Suv</p>
+              </li>
+              <li class="form__right-item">
+                <div class="form__right-img">
+                  <img src="./assets/images/form/water2.png" alt="coffee" />
+                </div>
+                <p class="form__right-name">Choy</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <!-- MY JS -->
+  <!-- MAIN END -->
+  <!-- FOOTER END -->
 
-  <script src="js/main.js"></script>
-</body>
+  <footer class="footer">Footer</footer>
 
+  <body>
+    <!-- SLICK JS -->
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <!-- MY JS -->
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

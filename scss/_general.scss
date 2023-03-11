@@ -11,6 +11,9 @@
   --black-color: #000;
   --background: #f1f1f1;
   --placeholder-color: #272727;
+  --company-text-color: rgba(255, 255, 255, 0.8);
+  --advantages-item-bg: rgba(17, 19, 23, 0.5);
+  --advantages-item-border: #4e4e4e;
 }
 
 .dark {
@@ -18,12 +21,18 @@
   --black-color: #fff;
   --background: #1e1e1e;
   --placeholder-color: #aaa;
+  --company-text-color: rgba(0, 0, 0, 0.8);
+  --advantages-item-bg: rgba(243, 243, 243, 0.5);
+  --advantages-item-border: #999999;
 }
 
 body {
   display: flex;
   min-height: 100vh;
   flex-flow: wrap column;
+  background-image: url("../assets/images/main\ page.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: var(--background);
   font-family: "Nunito Sans", sans-serif;
 }
