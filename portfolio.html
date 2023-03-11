@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>News</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <section>
+      <!-- HEADER START -->
+
+      <header class="header">
+        <div class="container">
+          <!-- DESKTOP HEADER -->
+
+          <div class="header__wrapper">
+            <div class="header__logo-box">
+              <a href="index.html" class="header__link">Logo</a>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a href="index.html" class="header__item-link">О компании </a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__item-link">Портфолио </a>
+                </li>
+                <li class="header__item">
+                  <a href="/news.html" class="header__item-link">Услуги </a>
+                </li>
+                <li class="header__item">
+                  <a href="index.html" class="header__item-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__functions-wrapper">
+              <div class="header__theme-wrapper">
+                <button
+                  type="button"
+                  class="header__theme-btn theme-active"
+                  id="sun"
+                >
+                  <div>
+                    <img
+                      src="../assets/images/sun.svg"
+                      alt="sun"
+                      width="30"
+                      height="30"
+                    />
+                  </div>
+                </button>
+                <button type="button" class="header__theme-btn" id="moon">
+                  <div></div>
+                </button>
+              </div>
+              <div class="header__contact-box">
+                <span class="header__tel">+998 90 777-77-77 </span>
+                <a href="mailto:chotatam@gmail.com" class="header__email"
+                  >chotatam@gmail.com</a
+                >
+              </div>
+              <a href="tel:+998907777777" class="header__order-btn"
+                >Заказать звонок</a
+              >
+            </div>
+          </div>
+
+          <!-- MOBILE HEADER -->
+
+          <div class="header__mobile-wrapper">
+            <button class="header__burger-btn" type="button" id="burger-btn">
+              <img
+                src="./assets/images/burger-btn.svg"
+                alt="burger button"
+                width="29"
+                height="19"
+              />
+            </button>
+
+            <div class="header__logo-holder">
+              <a href="#" class="header__mobile-logo-link">
+                <img
+                  src="./assets/images/mobile-logo.svg"
+                  alt="logo"
+                  width="89"
+                  height="39"
+                />
+              </a>
+            </div>
+
+            <button class="header__mobile-theme-btn" id="mobile-btn" />
+          </div>
+        </div>
+      </header>
+    </section>
+    <!-- HEADER END -->
+
+    <main class="main">
+      <!-- PROJECTS START -->
+
+      <section class="projects">
+        <div class="container">
+          <div class="projects__inner">
+            <h3 class="projects__title">Bajargan loyihalarimiz</h3>
+
+            <ul class="projects__categor-list">
+              <li class="projects__categor-item-active"></li>
+              <li class="projects__categor-item" id="all">
+                <button>Barchasi</button>
+              </li>
+              <li class="projects__categor-item" id="Veb sayt">
+                <button>Veb sayt</button>
+              </li>
+              <li class="projects__categor-item" id="Veb dizayn">
+                <button>Veb dizayn</button>
+              </li>
+              <li class="projects__categor-item" id="SMM">
+                <button>SMM</button>
+              </li>
+              <li class="projects__categor-item" id="Mobil ilova">
+                <button>Mobil ilova</button>
+              </li>
+            </ul>
+
+            <div class="projects__list-box">
+              <ul class="projects__list"></ul>
+
+              <div class="projects__list-all-btn">
+                <button>
+                  Barchasini ko’rish
+                  <span>
+                    <p>Barc</p>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FORM SECTION -->
+
+      <section class="form">
+        <div class="form__main container">
+          <form action="https://echo.htmlacademy.ru/">
+            <div class="form__inner">
+              <div class="form__left">
+                <h3 class="form__title">
+                  Sizni bir finjon qahva ustida loyihangizni batafsil muhokama
+                  qilishga mamnuniyat ila taklif qilamiz.
+                </h3>
+
+                <input class="form__input" type="text" placeholder="Ismingiz" />
+                <input
+                  class="form__input"
+                  type="text"
+                  placeholder="Telefon raqamingiz"
+                />
+                <input
+                  class="form__input form__input-last"
+                  type="text"
+                  placeholder="G'oyangiz xaqida qisqacha (Muhim emas)"
+                />
+                <p class="form__text">
+                  Qanday xizmatlardan foydalanishni xoxlaysiz?
+                </p>
+                <ul class="form__list">
+                  <li class="form__item">
+                    <input class="form__input-checkbox" type="checkbox" />
+                    <p>Backend</p>
+                  </li>
+                  <li class="form__item">
+                    <input class="form__input-checkbox" type="checkbox" />
+                    <p>Frontend</p>
+                  </li>
+                  <li class="form__item">
+                    <input class="form__input-checkbox" type="checkbox" />
+                    <p>CRM ishlab chiqish</p>
+                  </li>
+                  <li class="form__item">
+                    <input class="form__input-checkbox" type="checkbox" />
+                    <p>Grafik dizayn</p>
+                  </li>
+                  <li class="form__item">
+                    <input class="form__input-checkbox" type="checkbox" />
+                    <p>Internet magazin ishlab chiqish</p>
+                  </li>
+                  <li class="form__item">
+                    <input class="form__input-checkbox" type="checkbox" />
+                    <p>Motion dizayn</p>
+                  </li>
+                  <li class="form__item">
+                    <input class="form__input-checkbox" type="checkbox" />
+                    <p>Logotip va Brandbook</p>
+                  </li>
+                  <li class="form__item">
+                    <input class="form__input-checkbox" type="checkbox" />
+                    <p>Mobil ilova ishlab chiqish</p>
+                  </li>
+                  <li class="form__item">
+                    <input class="form__input-checkbox" type="checkbox" />
+                    <p>Portal ishlab chiqish</p>
+                  </li>
+                  <li class="form__item">
+                    <input class="form__input-checkbox" type="checkbox" />
+                    <p>Veb sayt ishlab chiqish</p>
+                  </li>
+                  <li class="form__item">
+                    <input class="form__input-checkbox" type="checkbox" />
+                    <p>Veb dizayn</p>
+                  </li>
+                  <li class="form__item">
+                    <input class="form__input-checkbox" type="checkbox" />
+                    <p>SMM dizayn</p>
+                  </li>
+                  <li class="form__item">
+                    <input class="form__input-checkbox" type="checkbox" />
+                    <p>Mobilograf</p>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <div class="form__right">
+                  <p class="form__right-title">NIMANI MA'QUL KO'RASIZ?</p>
+                  <ul class="form__right-list">
+                    <li class="form__right-item">
+                      <div class="form__right-img">
+                        <img
+                          src="./assets/images/form/coffee.png"
+                          alt="coffee"
+                        />
+                      </div>
+                      <p class="form__right-name">Achchiq kofe</p>
+                    </li>
+                    <li class="form__right-item">
+                      <div class="form__right-img">
+                        <img
+                          src="./assets/images/form/coffee2.png"
+                          alt="coffee"
+                        />
+                      </div>
+                      <p class="form__right-name">Sutli kofe</p>
+                    </li>
+                    <li class="form__right-item">
+                      <div class="form__right-img">
+                        <img
+                          src="./assets/images/form/water.png"
+                          alt="coffee"
+                        />
+                      </div>
+                      <p class="form__right-name">Suv</p>
+                    </li>
+                    <li class="form__right-item">
+                      <div class="form__right-img">
+                        <img
+                          src="./assets/images/form/water2.png"
+                          alt="coffee"
+                        />
+                      </div>
+                      <p class="form__right-name">Choy</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="form__list-all-btn">
+                  <button type="submit">
+                    Mijoz bo’lish
+                    <span>
+                      <p>Mijo</p>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="js/object.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/news.js"></script>
+  </body>
+</html>
