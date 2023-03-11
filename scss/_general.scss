@@ -12,20 +12,22 @@
   --background: #f1f1f1;
   --placeholder-color: #272727;
 
-
   --company-text-color: rgba(0, 0, 0, 0.8);
   --advantages-item-bg: rgba(243, 243, 243, 0.5);
   --advantages-item-border: #999999;
 
-  --hero-bg: url('../assets/images/light-hero-bg.svg');
-  --theme-img: url('../assets/images/sun.svg');
+  --hero-bg: url("../assets/images/light-hero-bg.svg");
+  --theme-img: url("../assets/images/sun.svg");
   --border: 1px solid transparent;
-  --moon-img: url('../assets/images/moon.svg');
-  --svg-filter: '#000';
+  --moon-img: url("../assets/images/moon.svg");
+  --svg-filter: "#000";
   --header-bg: rgba(23, 25, 29, 0.1);
-  --body-bg: url('../assets/images/white-body.svg');
+  --body-bg: url("../assets/images/white-body.svg");
 
   --form-bg: rgba(255, 255, 255, 0.9);
+  --services-icon1: rgba(84, 84, 212, 0.1);
+  --services-icon2: rgba(240, 64, 55, 0.1);
+  --services-icon3: rgba(254, 220, 90, 0.1);
 }
 
 .dark {
@@ -38,15 +40,18 @@
   --advantages-item-bg: rgba(17, 19, 23, 0.5);
   --advantages-item-border: #4e4e4e;
 
-  --hero-bg: url('../assets/images/dark-hero-bg.svg');
-  --theme-img: url('../assets/images/light-moon.svg');
+  --hero-bg: url("../assets/images/dark-hero-bg.svg");
+  --theme-img: url("../assets/images/light-moon.svg");
   --border: 1px solid #aaa;
-  --moon-img: url('../assets/images/light-moon.svg');
+  --moon-img: url("../assets/images/light-moon.svg");
   --svg-filter: invert(100%);
   --header-bg: rgba(23, 25, 29, 0.9);
-  --body-bg: url('../assets/images/dark-body.svg');
+  --body-bg: url("../assets/images/dark-body.svg");
 
   --form-bg: rgba(14, 16, 20, 0.9);
+  --services-icon1: rgba(84, 84, 212, 0.1);
+  --services-icon2: rgba(240, 64, 55, 0.1);
+  --services-icon3: rgba(254, 220, 90, 0.1);
 }
 
 body {

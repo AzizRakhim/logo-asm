@@ -1,0 +1,115 @@
+.services {
+  width: 100%;
+  position: relative;
+  padding-bottom: 120px;
+  &__inner {
+    padding: 40px 80px;
+    padding-bottom: 0px;
+    background: var(--form-bg);
+    border: 1px solid var(--advantages-item-border);
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--black-color);
+    font-family: "Proxima Nova";
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 72px;
+    flex-direction: column;
+    &:nth-child(2) {
+      .services__icon {
+        background-color: var(--services-icon2);
+      }
+    }
+    &:nth-child(3) {
+      .services__icon {
+        background-color: var(--services-icon3);
+      }
+    }
+    &:nth-child(4) {
+      .services__icon {
+        background-color: var(--services-icon3);
+      }
+    }
+    &:nth-child(5) {
+      .services__icon {
+        background-color: var(--services-icon1);
+      }
+    }
+    &:nth-child(6) {
+      .services__icon {
+        background-color: var(--services-icon2);
+      }
+    }
+  }
+  &__icon {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: var(--services-icon1);
+    svg {
+      margin-top: 18px;
+    }
+  }
+  &__text {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--black-color);
+    font-family: "Nunito Sans";
+    letter-spacing: -0.750316px;
+  }
+  &__span {
+    width: 100%;
+    max-width: 300px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    font-family: "Nunito Sans";
+    letter-spacing: -0.500211px;
+    color: var(--black-color);
+  }
+
+  @media screen and (max-width: 815px) {
+    &__list {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 100%;
+    }
+    &__item {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 568px) {
+    &__inner {
+      padding: 30px;
+    }
+    &__text {
+      font-size: 24px;
+      line-height: 33px;
+    }
+    &__span {
+      font-size: 16px;
+    }
+  }
+}

@@ -130,39 +130,39 @@ function projectsCategorHandler(id) {
   });
 }
 
-// HEADER AND HERO JS
+// // HEADER AND HERO JS
 
-const sunBtn = document.querySelector("#sun");
-const moonBtn = document.querySelector("#moon");
-const mobileBtn = document.querySelector("#mobile-btn");
-const burgerBtn = document.querySelector("#burger-btn");
-const headerModal = document.querySelector(".header__modal");
-const modalX = document.querySelector("#x");
+// const sunBtn = document.querySelector("#sun");
+// const moonBtn = document.querySelector("#moon");
+// const mobileBtn = document.querySelector("#mobile-btn");
+// const burgerBtn = document.querySelector("#burger-btn");
+// const headerModal = document.querySelector(".header__modal");
+// const modalX = document.querySelector("#x");
 
-sunBtn.addEventListener("click", () => {
-  document.body.classList.remove("dark");
+// sunBtn.addEventListener("click", () => {
+//   document.body.classList.remove("dark");
 
-  sunBtn.classList.add("theme-active");
-  moonBtn.classList.remove("theme-active");
-});
+//   sunBtn.classList.add("theme-active");
+//   moonBtn.classList.remove("theme-active");
+// });
 
-moonBtn.addEventListener("click", () => {
-  document.body.classList.add("dark");
+// moonBtn.addEventListener("click", () => {
+//   document.body.classList.add("dark");
 
-  moonBtn.classList.add("theme-active");
-  sunBtn.classList.remove("theme-active");
-});
+//   moonBtn.classList.add("theme-active");
+//   sunBtn.classList.remove("theme-active");
+// });
 
-mobileBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
+// mobileBtn.addEventListener("click", () => {
+//   document.body.classList.toggle("dark");
 
-  mobileBtn.classList.toggle("theme-dark");
-});
+//   mobileBtn.classList.toggle("theme-dark");
+// });
 
-burgerBtn.addEventListener("click", () => {
-  headerModal.classList.add("move-right");
-});
+// burgerBtn.addEventListener("click", () => {
+//   headerModal.classList.add("move-right");
+// });
 
-modalX.addEventListener("click", () => {
-  headerModal.classList.remove("move-right");
-});
+// modalX.addEventListener("click", () => {
+//   headerModal.classList.remove("move-right");
+// });
