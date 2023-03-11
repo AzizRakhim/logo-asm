@@ -2,9 +2,9 @@
 
 // PROJECTS JS
 
+const all = "all";
 const projectsList = document.querySelector(".projects__list");
 const categorBtns = document.querySelectorAll(".projects__categor-item");
-const all = "all";
 const categorActiveLi = document.querySelector(
   ".projects__categor-item-active"
 );
@@ -94,16 +94,32 @@ const projectsObject = [
     icon: "../assets/images/projects/hover-icon.svg",
   },
 ];
-
+// = = = = = = = = CATEGOR ACTIVE = = = = = = = = = =
+let act = 1
+handlerActive('all')
 projectsCategorHandler("all");
 categorBtns.forEach((item, inx) => {
   item.addEventListener("click", () => {
-    let act = inx + 1;
+    act = inx + 1;
+    handlerActive(item.id)
     categorActiveLi.style.transform = `translateX(${act * 132 - 132}px)`;
     projectsCategorHandler(item.id);
   });
 });
-
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+// = = = = = = = = CATEGOR HANDLER ACTIVE FUNC = = = = = = = = = =
+function handlerActive(id) {
+  categorBtns.forEach((item, inx) => {
+    if (item.id === id) {
+      item.classList.add("categorAct")
+    }
+    else {
+      item.classList.remove("categorAct")
+    }
+  });
+}
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+// = = = = = = = = CATEGOR HANDLER FILTER FUNC = = = = = = = = = =
 function projectsCategorHandler(id) {
   projectsList.innerHTML = "";
   projectsObject.forEach((item, inx) => {
@@ -111,10 +127,10 @@ function projectsCategorHandler(id) {
     li.className = "projects__item";
     li.id = item.categor;
     li.innerHTML = `
-    <span class="projects__item-categor">${item.categor}</span>
+    <span class="projects__item-categor" id=${item.categor}>${item.categor}</span>
     <img src=${item.img} alt=${item.name}>
 
-    <div class="projects__item-hover-box">
+    <div class="projects__item-hover-box" id=${item.categor}>
       <button class="projects__item-hover-close-btn">
         <img src=${item.icon} alt="project hover icon">
       </button>
@@ -129,6 +145,38 @@ function projectsCategorHandler(id) {
     }
   });
 }
+
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+// = = = = = = = = CATEGOR ITEMS TOGGLE BTN HANDLER FUNC = = = = = = = = = =
+
+const projectItemCategorBox = document.querySelectorAll('.projects__item-hover-box')
+const projectItemCategorToggle = document.querySelectorAll('.projects__item-categor')
+const projectItemCategorCloseBox = document.querySelectorAll('.projects__item-hover-close-btn')
+projectItemCategorToggle.forEach((item, inx) => {
+  item.addEventListener('click', () => {
+    projectItemCategorToggleHandler(inx + 1)
+  })
+})
+projectItemCategorCloseBox.forEach((item, inx) => {
+  item.addEventListener('click', () => {
+    projectItemCategorBox.forEach((item, iteminx) => {
+      if (iteminx + 1 === inx + 1) {
+        item.classList.remove("itemCategorToggle")
+      }
+    });
+  })
+})
+function projectItemCategorToggleHandler(id) {
+  projectItemCategorBox.forEach((item, inx) => {
+    if (inx + 1 === id) {
+      item.classList.add("itemCategorToggle")
+    }
+    else {
+      item.classList.remove("itemCategorToggle")
+    }
+  });
+}
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
 
 // HEADER AND HERO JS
 

@@ -12,7 +12,7 @@
   }
 
   &__link {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-weight: 500;
     font-size: 30px;
     line-height: 50px;
@@ -33,7 +33,7 @@
   }
 
   &__item-link {
-    font-family: 'Proxima Nova';
+    font-family: "Proxima Nova";
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -75,7 +75,6 @@
       align-items: center;
     }
 
-
     &:first-child {
       margin-right: 14px;
     }
@@ -97,7 +96,7 @@
   }
 
   &__tel {
-    font-family: 'Proxima Nova';
+    font-family: "Proxima Nova";
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -106,7 +105,7 @@
   }
 
   &__email {
-    font-family: 'Proxima Nova';
+    font-family: "Proxima Nova";
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
@@ -131,7 +130,7 @@
 
     img {
       transition: all 0.3s ease;
-      filter: var(--svg-filter)
+      filter: var(--svg-filter);
     }
   }
 
@@ -139,7 +138,7 @@
     width: 36px;
     height: 36px;
     border-radius: $border-radius-round;
-    background-color: #5454D4;
+    background-color: #5454d4;
     border: none;
     background-image: var(--theme-img);
     background-position: center center;
@@ -161,7 +160,7 @@
     top: 0;
     left: -110%;
     z-index: 10;
-    background-color: rgb(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     transition: all 0.3s ease;
   }
 
@@ -204,7 +203,7 @@
   }
 
   &__modal-link {
-    font-family: 'Proxima Nova';
+    font-family: "Proxima Nova";
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
@@ -217,7 +216,7 @@
     border-radius: 141px;
     padding: 21px 44px;
     margin: 0 50px 96px 51px;
-    font-family: 'Proxima Nova';
+    font-family: "Proxima Nova";
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
@@ -232,7 +231,7 @@
 }
 
 .theme-active {
-  background-color: #5454D4;
+  background-color: #5454d4;
 }
 
 @media screen and (max-width: 1100px) {

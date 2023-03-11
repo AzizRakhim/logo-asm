@@ -1,558 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-    />
-    <title>Document</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <link rel="stylesheet" href="css/main.min.css" />
-  </head>
 
-  <!-- HERO START -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>Document</title>
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" href="css/main.min.css" />
+</head>
 
-  <section id="hero" class="hero">
-    <!-- HEADER START -->
+<!-- HERO START -->
 
-    <header class="header">
-      <div class="container">
-        <!-- DESKTOP HEADER -->
+<section id="hero" class="hero">
+  <!-- HEADER START -->
 
-        <div class="header__wrapper">
-          <div class="header__logo-box">
-            <a href="#" class="header__link">Logo</a>
-          </div>
-          <nav class="header__nav">
-            <ul class="header__list">
-              <li class="header__item">
-                <a href="#" class="header__item-link">О компании </a>
-              </li>
-              <li class="header__item">
-                <a href="#" class="header__item-link">Портфолио </a>
-              </li>
-              <li class="header__item">
-                <a href="#" class="header__item-link">Услуги </a>
-              </li>
-              <li class="header__item">
-                <a href="#" class="header__item-link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__functions-wrapper">
-            <div class="header__theme-wrapper">
-              <button
-                type="button"
-                class="header__theme-btn theme-active"
-                id="sun"
-              >
-                <div>
-                  <img
-                    src="../assets/images/sun.svg"
-                    alt="sun"
-                    width="30"
-                    height="30"
-                  />
-                </div>
-              </button>
-              <button type="button" class="header__theme-btn" id="moon">
-                <div></div>
-              </button>
-            </div>
-            <div class="header__contact-box">
-              <span class="header__tel">+998 90 777-77-77 </span>
-              <a href="mailto:chotatam@gmail.com" class="header__email"
-                >chotatam@gmail.com</a
-              >
-            </div>
-            <a href="tel:+998907777777" class="header__order-btn"
-              >Заказать звонок</a
-            >
-          </div>
-        </div>
-
-        <!-- MOBILE HEADER -->
-
-        <div class="header__mobile-wrapper">
-          <button class="header__burger-btn" type="button" id="burger-btn">
-            <img
-              src="./assets/images/burger-btn.svg"
-              alt="burger button"
-              width="29"
-              height="19"
-            />
-          </button>
-
-          <div class="header__logo-holder">
-            <a href="#" class="header__mobile-logo-link">
-              <img
-                src="./assets/images/mobile-logo.svg"
-                alt="logo"
-                width="89"
-                height="39"
-              />
-            </a>
-          </div>
-
-          <button class="header__mobile-theme-btn" id="mobile-btn" />
-        </div>
-      </div>
-    </header>
-
-    <!-- HEADER END -->
-
+  <header class="header">
     <div class="container">
-      <div class="hero__container">
-        <div class="hero__left">
-          <h2 class="hero__title">
-            Biz veb-saytlar, ilovalarni ishlab chiqamiz
-          </h2>
-          <p class="hero__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
-          </p>
-          <div class="hero__btn-wrapper">
-            <button>
-              Портфолио
-              <span>
-                <p>Пор</p>
-              </span>
+      <!-- DESKTOP HEADER -->
+
+      <div class="header__wrapper">
+        <div class="header__logo-box">
+          <a href="#" class="header__link">Logo</a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__item-link">О компании </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__item-link">Портфолио </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__item-link">Услуги </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__item-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__functions-wrapper">
+          <div class="header__theme-wrapper">
+            <button type="button" class="header__theme-btn theme-active" id="sun">
+              <div>
+                <img src="../assets/images/sun.svg" alt="sun" width="30" height="30" />
+              </div>
+            </button>
+            <button type="button" class="header__theme-btn" id="moon">
+              <div></div>
             </button>
           </div>
+          <div class="header__contact-box">
+            <span class="header__tel">+998 90 777-77-77 </span>
+            <a href="mailto:chotatam@gmail.com" class="header__email">chotatam@gmail.com</a>
+          </div>
+          <a href="tel:+998907777777" class="header__order-btn">Заказать звонок</a>
         </div>
-        <div class="hero__right">
-          <canvas
-            id="cobe"
-            style="width: 500px; height: 500px"
-            width="1000"
-            height="1000"
-          ></canvas>
+      </div>
+
+      <!-- MOBILE HEADER -->
+
+      <div class="header__mobile-wrapper">
+        <button class="header__burger-btn" type="button" id="burger-btn">
+          <img src="./assets/images/burger-btn.svg" alt="burger button" width="29" height="19" />
+        </button>
+
+        <div class="header__logo-holder">
+          <a href="#" class="header__mobile-logo-link">
+            <img src="./assets/images/mobile-logo.svg" alt="logo" width="89" height="39" />
+          </a>
+        </div>
+
+        <button class="header__mobile-theme-btn" id="mobile-btn" />
+      </div>
+    </div>
+  </header>
+
+  <!-- HEADER END -->
+
+  <div class="container">
+    <div class="hero__container">
+      <div class="hero__left">
+        <h2 class="hero__title">
+          Biz veb-saytlar, ilovalarni ishlab chiqamiz
+        </h2>
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam.
+        </p>
+        <div class="hero__btn-wrapper">
+          <button>
+            Портфолио
+            <span>
+              <p>Пор</p>
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="hero__right">
+        <canvas id="cobe" style="width: 500px; height: 500px" width="1000" height="1000"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HERO END -->
+<!-- MAIN START -->
+
+<main id="main">
+  <!-- COMPANY SECTION -->
+
+  <section class="company">
+    <div class="company__main container">
+      <div class="company__inner">
+        <div class="company__left">
+          <h3 class="company__title">Kompaniya haqida</h3>
+          <p class="company__text">
+            Agentlik-bu mijozlarga o'z bizneslari uchun sifatli va innovatsion
+            echimlarni taqdim etish maqsadida tashkil etilgan veb-agentlik.
+            Bizning jamoamiz mijozlarga moslashtirilgan va sifatli mahsulotni
+            taklif qilish uchun yaqin hamkorlikda ishlaydigan tajribali
+            veb-dizayn, ishlab chiqish va marketing mutaxassislaridan iborat.
+          </p>
+          <p class="company__text">
+            Biz veb-dizayn, veb-sayt va mobil ilovalarni ishlab chiqish, SEO
+            optimallashtirish, kontent yaratish va reklama kampaniyalarini o'z
+            ichiga olgan keng ko'lamli xizmatlarni taklif etamiz. Biz eng
+            yangi texnologiyalar va innovatsion usullardan foydalangan holda
+            brendni rivojlantirish va sotishni ko'paytirish bilan
+            shug'ullanamiz.
+          </p>
+        </div>
+        <div class="company__right">
+          <ul class="company__list">
+            <li class="company__item">
+              <div>
+                <span>20+ </span>
+                <p>Проектов запустил</p>
+              </div>
+              <div>
+                <span>4 года </span>
+                <p>Опыта разработки</p>
+              </div>
+            </li>
+            <li class="company__item">
+              <div>
+                <span>12+</span>
+                <p>Профессионалов</p>
+              </div>
+              <div>
+                <span>4 года </span>
+                <p>Опыта разработки</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- HERO END -->
-  <!-- MAIN START -->
+  <!-- OUR Advantages -->
 
-  <main id="main">
-    <!-- COMPANY SECTION -->
-
-    <section class="company">
-      <div class="company__main container">
-        <div class="company__inner">
-          <div class="company__left">
-            <h3 class="company__title">Kompaniya haqida</h3>
-            <p class="company__text">
-              Agentlik-bu mijozlarga o'z bizneslari uchun sifatli va innovatsion
-              echimlarni taqdim etish maqsadida tashkil etilgan veb-agentlik.
-              Bizning jamoamiz mijozlarga moslashtirilgan va sifatli mahsulotni
-              taklif qilish uchun yaqin hamkorlikda ishlaydigan tajribali
-              veb-dizayn, ishlab chiqish va marketing mutaxassislaridan iborat.
-            </p>
-            <p class="company__text">
-              Biz veb-dizayn, veb-sayt va mobil ilovalarni ishlab chiqish, SEO
-              optimallashtirish, kontent yaratish va reklama kampaniyalarini o'z
-              ichiga olgan keng ko'lamli xizmatlarni taklif etamiz. Biz eng
-              yangi texnologiyalar va innovatsion usullardan foydalangan holda
-              brendni rivojlantirish va sotishni ko'paytirish bilan
-              shug'ullanamiz.
-            </p>
-          </div>
-          <div class="company__right">
-            <ul class="company__list">
-              <li class="company__item">
-                <div>
-                  <span>20+ </span>
-                  <p>Проектов запустил</p>
-                </div>
-                <div>
-                  <span>4 года </span>
-                  <p>Опыта разработки</p>
-                </div>
-              </li>
-              <li class="company__item">
-                <div>
-                  <span>12+</span>
-                  <p>Профессионалов</p>
-                </div>
-                <div>
-                  <span>4 года </span>
-                  <p>Опыта разработки</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- OUR Advantages -->
-
-    <section class="advantages">
-      <div class="advantages__main container">
-        <div class="advantages__inner">
-          <h3 class="advantages__title">Bizning afzalliklarimiz</h3>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <div class="advantages__item-box">
-                <div class="advantages__img">
-                  <img
-                    src="./assets/images/advantages/advantages1.svg"
-                    alt=""
-                  />
-                </div>
-                <p class="advantages__item-name">Individual yondashuv</p>
-                <span class="advantages__line"></span>
-                <span class="advantages__span"
-                  >Biz har bir mijozga g'amxo'rlik qilamiz va ularning
-                  ehtiyojlariga javob beradigan echimlarni yaratamiz</span
-                >
+  <section class="advantages">
+    <div class="advantages__main container">
+      <div class="advantages__inner">
+        <h3 class="advantages__title">Bizning afzalliklarimiz</h3>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantages__item-box">
+              <div class="advantages__img">
+                <img src="./assets/images/advantages/advantages1.svg" alt="" />
               </div>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__item-box">
-                <div class="advantages__img">
-                  <img
-                    src="./assets/images/advantages/advantages1.svg"
-                    alt=""
-                  />
-                </div>
-                <p class="advantages__item-name">Ekspertiza</p>
-                <span class="advantages__line"></span>
-                <span class="advantages__span"
-                  >Biz har bir mijozga g'amxo'rlik qilamiz va ularning
-                  ehtiyojlariga javob beradigan echimlarni yaratamiz</span
-                >
-              </div>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__item-box">
-                <div class="advantages__img">
-                  <img
-                    src="./assets/images/advantages/advantages1.svg"
-                    alt=""
-                  />
-                </div>
-                <p class="advantages__item-name">Professional xizmat</p>
-                <span class="advantages__line"></span>
-                <span class="advantages__span"
-                  >Biz har bir mijozga g'amxo'rlik qilamiz va ularning
-                  ehtiyojlariga javob beradigan echimlarni yaratamiz</span
-                >
-              </div>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__item-box">
-                <div class="advantages__img">
-                  <img
-                    src="./assets/images/advantages/advantages1.svg"
-                    alt=""
-                  />
-                </div>
-                <p class="advantages__item-name">Individual yondashuv</p>
-                <span class="advantages__line"></span>
-                <span class="advantages__span"
-                  >Biz har bir mijozga g'amxo'rlik qilamiz va ularning
-                  ehtiyojlariga javob beradigan echimlarni yaratamiz</span
-                >
-              </div>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__item-box">
-                <div class="advantages__img">
-                  <img
-                    src="./assets/images/advantages/advantages1.svg"
-                    alt=""
-                  />
-                </div>
-                <p class="advantages__item-name">Ekspertiza</p>
-                <span class="advantages__line"></span>
-                <span class="advantages__span"
-                  >Biz har bir mijozga g'amxo'rlik qilamiz va ularning
-                  ehtiyojlariga javob beradigan echimlarni yaratamiz</span
-                >
-              </div>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__item-box">
-                <div class="advantages__img">
-                  <img
-                    src="./assets/images/advantages/advantages1.svg"
-                    alt=""
-                  />
-                </div>
-                <p class="advantages__item-name">Professional xizmat</p>
-                <span class="advantages__line"></span>
-                <span class="advantages__span"
-                  >Biz har bir mijozga g'amxo'rlik qilamiz va ularning
-                  ehtiyojlariga javob beradigan echimlarni yaratamiz</span
-                >
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ADVANTAGE END -->
-    <!-- PROJECTS START -->
-
-    <section class="projects">
-      <div class="container">
-        <div class="projects__inner">
-          <h3 class="projects__title">Bajargan loyihalarimiz</h3>
-
-          <ul class="projects__categor-list">
-            <li class="projects__categor-item-active"></li>
-            <li class="projects__categor-item" id="all">
-              <button>Barchasi</button>
-            </li>
-            <li class="projects__categor-item" id="Veb sayt">
-              <button>Veb sayt</button>
-            </li>
-            <li class="projects__categor-item" id="Veb dizayn">
-              <button>Veb dizayn</button>
-            </li>
-            <li class="projects__categor-item" id="SMM">
-              <button>SMM</button>
-            </li>
-            <li class="projects__categor-item" id="Mobil ilova">
-              <button>Mobil ilova</button>
-            </li>
-          </ul>
-
-          <div class="projects__list-box">
-            <ul class="projects__list"></ul>
-
-            <div class="projects__list-all-btn">
-              <button>
-                Barchasini ko’rish
-                <span>
-                  <p>Barc</p>
-                </span>
-              </button>
+              <p class="advantages__item-name">Individual yondashuv</p>
+              <span class="advantages__line"></span>
+              <span class="advantages__span">Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                ehtiyojlariga javob beradigan echimlarni yaratamiz</span>
             </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__item-box">
+              <div class="advantages__img">
+                <img src="./assets/images/advantages/advantages1.svg" alt="" />
+              </div>
+              <p class="advantages__item-name">Ekspertiza</p>
+              <span class="advantages__line"></span>
+              <span class="advantages__span">Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                ehtiyojlariga javob beradigan echimlarni yaratamiz</span>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__item-box">
+              <div class="advantages__img">
+                <img src="./assets/images/advantages/advantages1.svg" alt="" />
+              </div>
+              <p class="advantages__item-name">Professional xizmat</p>
+              <span class="advantages__line"></span>
+              <span class="advantages__span">Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                ehtiyojlariga javob beradigan echimlarni yaratamiz</span>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__item-box">
+              <div class="advantages__img">
+                <img src="./assets/images/advantages/advantages1.svg" alt="" />
+              </div>
+              <p class="advantages__item-name">Individual yondashuv</p>
+              <span class="advantages__line"></span>
+              <span class="advantages__span">Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                ehtiyojlariga javob beradigan echimlarni yaratamiz</span>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__item-box">
+              <div class="advantages__img">
+                <img src="./assets/images/advantages/advantages1.svg" alt="" />
+              </div>
+              <p class="advantages__item-name">Ekspertiza</p>
+              <span class="advantages__line"></span>
+              <span class="advantages__span">Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                ehtiyojlariga javob beradigan echimlarni yaratamiz</span>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__item-box">
+              <div class="advantages__img">
+                <img src="./assets/images/advantages/advantages1.svg" alt="" />
+              </div>
+              <p class="advantages__item-name">Professional xizmat</p>
+              <span class="advantages__line"></span>
+              <span class="advantages__span">Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                ehtiyojlariga javob beradigan echimlarni yaratamiz</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGE END -->
+  <!-- PROJECTS START -->
+
+  <section class="projects">
+    <div class="container">
+      <div class="projects__inner">
+        <h3 class="projects__title">Bajargan loyihalarimiz</h3>
+
+        <ul class="projects__categor-list">
+          <li class="projects__categor-item-active"></li>
+          <li class="projects__categor-item" id="all">
+            <button>Barchasi</button>
+          </li>
+          <li class="projects__categor-item" id="Veb sayt">
+            <button>Veb sayt</button>
+          </li>
+          <li class="projects__categor-item" id="Veb dizayn">
+            <button>Veb dizayn</button>
+          </li>
+          <li class="projects__categor-item" id="SMM">
+            <button>SMM</button>
+          </li>
+          <li class="projects__categor-item" id="Mobil ilova">
+            <button>Mobil ilova</button>
+          </li>
+        </ul>
+
+        <div class="projects__list-box">
+          <ul class="projects__list"></ul>
+
+          <div class="projects__list-all-btn">
+            <button>
+              Barchasini ko’rish
+              <span>
+                <p>Barc</p>
+              </span>
+            </button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FORM SECTION -->
+  <!-- FORM SECTION -->
 
-    <section class="form">
-      <div class="form__main container">
-        <div class="form__inner">
-          <div class="form__left">
-            <h3 class="form__title">
-              Sizni bir finjon qahva ustida loyihangizni batafsil muhokama
-              qilishga mamnuniyat ila taklif qilamiz.
-            </h3>
-            <form action="https://echo.htmlacademy.ru/">
-              <input class="form__input" type="text" placeholder="Ismingiz" />
-              <input
-                class="form__input"
-                type="text"
-                placeholder="Telefon raqamingiz"
-              />
-              <input
-                class="form__input form__input-last"
-                type="text"
-                placeholder="G'oyangiz xaqida qisqacha (Muhim emas)"
-              />
-              <p class="form__text">
-                Qanday xizmatlardan foydalanishni xoxlaysiz?
-              </p>
-              <ul class="form__list">
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="checkbox" />
-                  <p>Backend</p>
-                </li>
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="checkbox" />
-                  <p>Frontend</p>
-                </li>
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="checkbox" />
-                  <p>CRM ishlab chiqish</p>
-                </li>
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="checkbox" />
-                  <p>Grafik dizayn</p>
-                </li>
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="checkbox" />
-                  <p>Internet magazin ishlab chiqish</p>
-                </li>
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="checkbox" />
-                  <p>Motion dizayn</p>
-                </li>
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="checkbox" />
-                  <p>Logotip va Brandbook</p>
-                </li>
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="checkbox" />
-                  <p>Mobil ilova ishlab chiqish</p>
-                </li>
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="checkbox" />
-                  <p>Portal ishlab chiqish</p>
-                </li>
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="checkbox" />
-                  <p>Veb sayt ishlab chiqish</p>
-                </li>
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="checkbox" />
-                  <p>Veb dizayn</p>
-                </li>
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="checkbox" />
-                  <p>SMM dizayn</p>
-                </li>
-                <li class="form__item">
-                  <input class="form__input-checkbox" type="checkbox" />
-                  <p>Mobilograf</p>
-                </li>
-              </ul>
-            </form>
-          </div>
-          <div class="form__right">
-            <p class="form__right-title">NIMANI MA'QUL KO'RASIZ?</p>
-            <ul class="form__right-list">
-              <li class="form__right-item">
-                <div class="form__right-img">
-                  <img src="./assets/images/form/coffee.png" alt="coffee" />
-                </div>
-                <p class="form__right-name">Achchiq kofe</p>
+  <section class="form">
+    <div class="form__main container">
+      <div class="form__inner">
+        <div class="form__left">
+          <h3 class="form__title">
+            Sizni bir finjon qahva ustida loyihangizni batafsil muhokama
+            qilishga mamnuniyat ila taklif qilamiz.
+          </h3>
+          <form action="https://echo.htmlacademy.ru/">
+            <input class="form__input" type="text" placeholder="Ismingiz" />
+            <input class="form__input" type="text" placeholder="Telefon raqamingiz" />
+            <input class="form__input form__input-last" type="text"
+              placeholder="G'oyangiz xaqida qisqacha (Muhim emas)" />
+            <p class="form__text">
+              Qanday xizmatlardan foydalanishni xoxlaysiz?
+            </p>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" />
+                <p>Backend</p>
               </li>
-              <li class="form__right-item">
-                <div class="form__right-img">
-                  <img src="./assets/images/form/coffee2.png" alt="coffee" />
-                </div>
-                <p class="form__right-name">Sutli kofe</p>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" />
+                <p>Frontend</p>
               </li>
-              <li class="form__right-item">
-                <div class="form__right-img">
-                  <img src="./assets/images/form/water.png" alt="coffee" />
-                </div>
-                <p class="form__right-name">Suv</p>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" />
+                <p>CRM ishlab chiqish</p>
               </li>
-              <li class="form__right-item">
-                <div class="form__right-img">
-                  <img src="./assets/images/form/water2.png" alt="coffee" />
-                </div>
-                <p class="form__right-name">Choy</p>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" />
+                <p>Grafik dizayn</p>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" />
+                <p>Internet magazin ishlab chiqish</p>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" />
+                <p>Motion dizayn</p>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" />
+                <p>Logotip va Brandbook</p>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" />
+                <p>Mobil ilova ishlab chiqish</p>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" />
+                <p>Portal ishlab chiqish</p>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" />
+                <p>Veb sayt ishlab chiqish</p>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" />
+                <p>Veb dizayn</p>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" />
+                <p>SMM dizayn</p>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" type="checkbox" />
+                <p>Mobilograf</p>
               </li>
             </ul>
-          </div>
+          </form>
+        </div>
+        <div class="form__right">
+          <p class="form__right-title">NIMANI MA'QUL KO'RASIZ?</p>
+          <ul class="form__right-list">
+            <li class="form__right-item">
+              <div class="form__right-img">
+                <img src="./assets/images/form/coffee.png" alt="coffee" />
+              </div>
+              <p class="form__right-name">Achchiq kofe</p>
+            </li>
+            <li class="form__right-item">
+              <div class="form__right-img">
+                <img src="./assets/images/form/coffee2.png" alt="coffee" />
+              </div>
+              <p class="form__right-name">Sutli kofe</p>
+            </li>
+            <li class="form__right-item">
+              <div class="form__right-img">
+                <img src="./assets/images/form/water.png" alt="coffee" />
+              </div>
+              <p class="form__right-name">Suv</p>
+            </li>
+            <li class="form__right-item">
+              <div class="form__right-img">
+                <img src="./assets/images/form/water2.png" alt="coffee" />
+              </div>
+              <p class="form__right-name">Choy</p>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-  </main>
-
-  <!-- MAIN END -->
-  <!-- FOOTER END -->
-
-  <footer class="footer">Footer</footer>
-
-  <!-- MODAL -->
-
-  <div class="header__modal">
-    <div class="header__modal-title">
-      <div>
-        <img
-          src="./assets/images/mobile-logo.svg"
-          alt="logo"
-          width="89"
-          height="39"
-          class="logo-img"
-        />
-      </div>
-      <button type="button" class="header__x-btn" id="x">
-        <img src="./assets/images/x.svg" alt="x btn" width="24" height="24" />
-      </button>
     </div>
-    <div class="header__list-wrapper">
-      <ul class="header__modal-list">
-        <li class="header__modal-item">
-          <a href="#" class="header__modal-link"> Biz haqimizda </a>
-        </li>
-        <li class="header__modal-item">
-          <a href="#" class="header__modal-link"> Portfolio </a>
-        </li>
-        <li class="header__modal-item">
-          <a href="#" class="header__modal-link"> Xizmatlarimiz </a>
-        </li>
-        <li class="header__modal-item">
-          <a href="#" class="header__modal-link"> Buyurtma berish </a>
-        </li>
-      </ul>
-      <a href="tel:+998999999999" class="header__modal-tel"> (99) 999 9999 </a>
+  </section>
+</main>
+
+<!-- MAIN END -->
+<!-- FOOTER END -->
+
+<footer class="footer">Footer</footer>
+
+<!-- MODAL -->
+
+<div class="header__modal">
+  <div class="header__modal-title">
+    <div>
+      <img src="./assets/images/mobile-logo.svg" alt="logo" width="89" height="39" class="logo-img" />
     </div>
+    <button type="button" class="header__x-btn" id="x">
+      <img src="./assets/images/x.svg" alt="x btn" width="24" height="24" />
+    </button>
   </div>
-  <body>
-    <!-- SLICK JS -->
+  <div class="header__list-wrapper">
+    <ul class="header__modal-list">
+      <li class="header__modal-item">
+        <a href="#" class="header__modal-link"> Biz haqimizda </a>
+      </li>
+      <li class="header__modal-item">
+        <a href="#" class="header__modal-link"> Portfolio </a>
+      </li>
+      <li class="header__modal-item">
+        <a href="#" class="header__modal-link"> Xizmatlarimiz </a>
+      </li>
+      <li class="header__modal-item">
+        <a href="#" class="header__modal-link"> Buyurtma berish </a>
+      </li>
+    </ul>
+    <a href="tel:+998999999999" class="header__modal-tel"> (99) 999 9999 </a>
+  </div>
+</div>
 
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+<body>
+  <!-- SLICK JS -->
 
-    <!-- GLOBE JS -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 
-    <script type="module">
-      import createGlobe from "https://cdn.skypack.dev/cobe";
+  <!-- GLOBE JS -->
 
-      let phi = 0;
-      let canvas = document.getElementById("cobe");
+  <script type="module">
+    import createGlobe from "https://cdn.skypack.dev/cobe";
 
-      const globe = createGlobe(canvas, {
-        devicePixelRatio: 2,
-        width: 1000,
-        height: 1000,
-        phi: 0,
-        theta: 0,
-        dark: 0,
-        diffuse: 1.2,
-        scale: 1,
-        mapSamples: 16000,
-        mapBrightness: 6,
-        baseColor: [1, 1, 1],
-        markerColor: [1, 0.5, 1],
-        glowColor: [1, 1, 1],
-        offset: [0, 0],
-        markers: [
-          { location: [37.7595, -122.4367], size: 0.03 },
-          { location: [40.7128, -74.006], size: 0.1 },
-        ],
-        onRender: (state) => {
-          state.phi = phi;
-          phi += 0.01;
-        },
-      });
-    </script>
+    let phi = 0;
+    let canvas = document.getElementById("cobe");
 
-    <!-- MY JS -->
+    const globe = createGlobe(canvas, {
+      devicePixelRatio: 2,
+      width: 1000,
+      height: 1000,
+      phi: 0,
+      theta: 0,
+      dark: 0,
+      diffuse: 1.2,
+      scale: 1,
+      mapSamples: 16000,
+      mapBrightness: 6,
+      baseColor: [1, 1, 1],
+      markerColor: [1, 0.5, 1],
+      glowColor: [1, 1, 1],
+      offset: [0, 0],
+      markers: [
+        { location: [37.7595, -122.4367], size: 0.03 },
+        { location: [40.7128, -74.006], size: 0.1 },
+      ],
+      onRender: (state) => {
+        state.phi = phi;
+        phi += 0.01;
+      },
+    });
+  </script>
 
-    <script src="js/object.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <!-- MY JS -->
+
+  <script src="js/object.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
